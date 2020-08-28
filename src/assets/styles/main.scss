@@ -1,0 +1,477 @@
+@import "components/import.scss";
+
+.banner {
+    position: relative;
+    padding: 40px 0 40px 0;
+    overflow: hidden;
+
+    .banner__text {
+        &--small {
+            font-size: 20px;
+            margin-bottom: 0 !important;
+        }
+
+        &--big {
+            font-size: 52px;
+            font-weight: 700;
+            color: black;
+            margin-top: -5px;
+            margin-bottom: 0;
+        }
+    }
+
+    .banner__search {
+        margin-top: 0px;
+
+        .search-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .search-column {
+                &-text {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: black;
+                    margin-bottom: 10px;
+                }
+
+                input {
+                    border: 2px solid $border-color-CC;
+                    padding: 15px 10px;
+                    box-sizing: border-box;
+                    height: 100%;
+                }
+            }
+
+            &-input {
+                width: 34%;
+            }
+
+            &-btn {
+                width: 31%;
+            }
+
+            &-a {
+                text-align: center;
+                margin-top: 5px;
+
+                a {
+                    font-size: 13px;
+                    color: $border-color-085FF7 !important;
+                }
+            }
+        }
+
+        .btn-custom {
+            width: 96%;
+            padding: 12px 0px;
+            border-radius: 60px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 49px;
+            margin-left: 10px;
+            background-color: $border-color-085FF7;
+            color: white;
+            border: none;
+        }
+
+        .input-icon {
+            position: relative;
+            height: 45px;
+
+            i {
+                position: absolute;
+                top: 33%;
+                font-weight: 400;
+                right: 5%;
+            }
+
+            input:focus~i {
+                display: none;
+            }
+        }
+    }
+}
+
+.banner-img {
+    position: absolute;
+    right: -165px;
+    top: -6%;
+    width: 430px;
+    height: 450px;
+}
+.hiring-list{
+    background-color: $border-color-F5;
+    width: 100%;
+    padding: 40px 0 5px 0;
+}
+.hiring {
+    background-color: $border-color-F5;
+    padding-bottom: 15px;
+
+    .hiring-now {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.5px;
+        padding: 10px 30px;
+
+        .hiring-now__img {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+        }
+
+        .hiring-now__text {
+            font-size: 23px;
+            font-weight: 700;
+            color: black;
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .hiring-company {
+        .hiring-rows {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .row-item-6 {
+                width: 49.8%;
+            }
+
+            &-item {
+                width: 33.2%;
+                margin-bottom: 2.5px;
+                background-color: white;
+
+                .company__infor {
+                    display: flex;
+                    padding: 20px 10px 15px 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &-right {
+                        display: none;
+
+                        i {
+                            color: $border-color-CC;
+                        }
+                    }
+
+                    &-left {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    &-img {
+                        margin-right: 10px;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+
+                    &-rate {
+                        display: flex;
+                        flex-direction: column;
+
+                        .company-name {
+                            font-size: 15px;
+                            font-weight: 700 !important;
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+
+                        .company-rating {
+                            &:hover {
+                                text-decoration: none;
+                            }
+
+                        }
+
+                        .company-view {
+                            font-size: 13px;
+                            color: #8a8a8a !important;
+                        }
+                    }
+                }
+
+                .company__link {
+                    display: flex;
+                    padding-left: 20px;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+
+                    div {
+                        margin-right: 30px;
+                    }
+
+                    a {
+                        font-size: 15px;
+                        color: #4b4b4b !important;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: black !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hiring-link {
+        background-color: white;
+        padding: 15px 25px;
+        margin-bottom: 10px;
+
+        .blue {
+            font-size: 15px;
+            color: #4b4b4b !important;
+
+            &:hover {
+                text-decoration: none;
+                color: black !important;
+            }
+        }
+
+        .black {
+            display: none;
+            font-size: 15px;
+            color: black !important;
+        }
+    }
+
+}
+
+.rate {
+    background-color: #F5F5F5;
+    margin-bottom: 15px;
+    .container-rate {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 20px;
+        border-top: 5px solid orangered;
+
+        .rate__text {
+            display: flex;
+            align-items: center;
+
+            span {
+                font-size: 21px;
+                font-weight: 700;
+            }
+        }
+
+        .rating {
+            background-color: #FFFBDE;
+            border-radius: 20px;
+            unicode-bidi: bidi-override;
+            direction: rtl;
+            padding: 3px 25px;
+            margin-right: 20px;
+        }
+
+        .rating>span {
+            display: inline-block;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 40px;
+            color: $star;
+        }
+
+        .rating>span:hover:before,
+        .rating>span:hover~span:before {
+            content: "\2605";
+            position: absolute;
+            color: $star;
+        }
+    }
+}
+
+.footer {
+    background-color: white;
+
+    &__more {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        span {
+            margin-bottom: 10px;
+            margin-top: 30px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        a {
+            font-size: 13px;
+            color: $text-color-75 !important;
+
+            &:hover {
+                text-decoration: none;
+                color: black !important;
+            }
+        }
+    }
+
+    &__infor {
+        font-size: 12px;
+        font-weight: 700;
+        border-top: 1px solid #F2F2F2;
+        padding-top: 35px;
+        padding-bottom: 40px;
+        margin-top: 35px;
+
+        &-job {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 5px;
+            a {
+                font-weight: 700 !important;
+                margin: 0 4px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &-privacy {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            span {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1053px) {
+    .banner-img {
+        display: none;
+    }
+
+    .banner {
+        padding: 80px 15px 20px 15px;
+
+        .banner__text {
+            &--small {
+                font-size: 16px;
+            }
+
+            &--big {
+                font-size: 22px;
+                margin-top: 10px;
+            }
+        }
+
+        .banner__search {
+            margin-top: 20px;
+
+            .search-row {
+                flex-wrap: wrap;
+
+                .search-column {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                .btn-custom {
+                    width: 100%;
+                }
+
+                .input-icon {
+                    position: relative;
+                    height: 45px;
+
+                    i {
+                        right: 2%;
+                        top: 20%;
+                        font-size: 25px;
+                    }
+                }
+
+                &-a {
+                    a {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+    .hiring-list{
+        padding-top: 10px;
+    }
+    .hiring {
+        &-now{
+            margin-bottom: 2px !important;
+            &__text{
+                font-size: 19px !important;
+            }
+        }
+        &-rows-item {
+            width: 100% !important;
+            margin-bottom: 2px !important;
+
+            .company__infor {
+                border-bottom: 1.5px solid $border-color-F5;
+
+                &-right {
+                    display: block !important;
+                    margin-right: 10px;
+                }
+
+                &-rate {
+                    margin-left: 10px;
+                }
+            }
+
+            .company__link {
+                justify-content: space-between;
+            }
+        }
+
+        &__link {
+            .black {
+                display: block;
+                color: black !important;
+            }
+
+            .blue {
+                display: none;
+            }
+        }
+    }
+
+    .rate {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+    .footer-responsive-text{
+        margin-bottom: 0;
+    }
+}
