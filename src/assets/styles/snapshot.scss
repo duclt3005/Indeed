@@ -25,7 +25,7 @@ $color-green: #00B887;
 }
 
 .work {
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 0 15px;
 
     .happy {
@@ -589,8 +589,9 @@ $color-green: #00B887;
     }
 
     &__img {
-        width: 40%;
-
+        width: 30%;
+        margin-top: 40px;
+        margin-right: 20px;
         img {
             width: 100%;
         }
@@ -1038,6 +1039,7 @@ $color-green: #00B887;
 
         .footer-input {
             width: 79%;
+            height: 45px;
             position: relative;
             input {
                 height: 100%;
@@ -1064,6 +1066,7 @@ $color-green: #00B887;
                 font-weight: 700;
                 width: 100%;
                 height: 45px;
+                margin-top: -3px;
             }
         }
     }
@@ -1076,7 +1079,7 @@ $color-green: #00B887;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     align-items: center;
-
+    color: black;
     &-job {
         width: 45%;
         display: flex;
@@ -1120,9 +1123,12 @@ $color-green: #00B887;
 
 @media screen and (max-width:1053px) {
     .banner {
-        padding-top: 60px;
+        padding-top: 53px;
+        margin-bottom: 10px;
     }
-
+    .banner-img{
+        img{width: 100%;}
+    }
     .container-custom {
         width: 100%;
     }
@@ -1130,7 +1136,9 @@ $color-green: #00B887;
     .company {
         padding: 0 15px;
     }
-
+    .rate__text-header{
+        font-size: 17px !important;
+    }
     .company-infor {
         flex-wrap: wrap;
 
@@ -1163,9 +1171,10 @@ $color-green: #00B887;
     .company-rate {
         margin-top: 0 ;
         padding-left: 15px;
-
+        padding-bottom: 25px;
         .rate-list {
             width: 100%;
+            margin-bottom: 20px;
         }
 
         .rate-comment {
@@ -1203,7 +1212,7 @@ $color-green: #00B887;
                 }
 
                 .rate__link {
-                    padding: 20px;
+                    padding: 15px 20px 0 20px;
                     border-top: 1px solid $border-color-EC;
 
                     a {
@@ -1216,22 +1225,25 @@ $color-green: #00B887;
 
     .leader {
         padding-bottom: 0;
-
+        padding-top: 20px;
         &__header {
             padding-left: 15px;
         }
 
         &__content {
             flex-direction: column;
-
+            margin-top: 0;
             &-left {
                 width: 100%;
                 padding-left: 15px;
                 margin-bottom: 15px;
             }
         }
-    }
 
+    }
+    .leader__content-left{
+        padding-top: 0;
+    }
     .leader__content-right {
         width: 100%;
         .discuss-note{
@@ -1271,14 +1283,13 @@ $color-green: #00B887;
     }
 
     .leader-link {
-        border-top: 1px solid $border-color-EC;
-        padding: 20px 15px;
-        border-bottom: 10px solid $border-color-EC;
+        border-top: 2px solid $border-color-F6;
+        padding:15px;
         display: flex;
         justify-content: space-between;
 
         a {
-            color: $text-color-45 !important;
+            color: $text-color-111 !important;
         }
 
         i {
@@ -1286,10 +1297,6 @@ $color-green: #00B887;
             color: $border-color-CC;
             font-size: 15px;
         }
-    }
-
-    .review-border {
-        border-bottom: 10px solid $border-color-EC;
     }
 
     .review {
@@ -1317,7 +1324,15 @@ $color-green: #00B887;
 
     .discuss {
         flex-direction: column;
-
+        &-header{
+            font-size: 21px;
+            border-top: 8px solid #ECECEC ;
+            padding-top: 10px;
+            padding-left: 15px;
+            font-weight: 400;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
         .leader__content-right {
             .leader-link {
                 border-bottom: 1px solid $border-color-EC;
@@ -1327,22 +1342,14 @@ $color-green: #00B887;
         .question-lists {
             width: 100%;
             padding-left: 15px;
-            border-bottom: 10px solid $border-color-EC;
-            padding-bottom: 20px;
             padding-top: 10px;
+            margin-bottom: 20px;
         }
-    }
-
-    .discuss-header {
-        padding-left: 15px;
-        font-weight: 400;
-        margin-top: 10px;
-        margin-bottom: 5px;
     }
 
     .culture {
         flex-direction: column;
-
+        margin-top: 0;
         &-left {
             width: 100%;
             &-item{
@@ -1391,7 +1398,7 @@ $color-green: #00B887;
                 align-items: center;
                 font-size: 17px;
                 padding: 0 0 0 15px;
-                margin-bottom: 15px;
+                margin-bottom: 20px;
 
                 p {
                     margin-top: 0;
@@ -1399,7 +1406,7 @@ $color-green: #00B887;
                 }
 
                 img {
-                    width: 2.5%;
+                    width: 1.7%;
                 }
             }
 

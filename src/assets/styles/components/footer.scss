@@ -23,7 +23,7 @@
             width: 100%;
             padding: 20px 10px 20px 0;
             &-text{
-                font-size: 21px;
+                font-size: 19px;
                 font-weight: 700;
                 color: black;
                 padding-left: 20px;
@@ -60,6 +60,7 @@
         border-bottom: 1px solid $border-color-CC;
         &-text{
             font-size: 15px;
+            color: black;
         }
         &-icon{
             i{

@@ -12,6 +12,7 @@ $color-green: #00B887;
 .join{
     margin-top: 60px;
     &-row{
+        padding-left: 15px;
         display: flex;
         justify-content: space-between;
         &-left{
@@ -251,13 +252,25 @@ $color-green: #00B887;
     .header__responsive{
         padding-bottom: 0;
     }
+    .banner-company{
+        margin-bottom: 80px;
+    }
+    .banner-border{
+        top: 49px !important;
+    }
+    .banner-header-fixed{
+        .banner-border{
+            top: 56px !important;
+        }
+    }
     .container-custom {
         width: 100%;
     }
     .join{
-        margin-top: 20px;
+        margin-top: 30px;
         &-row{
             flex-direction: column;
+            padding-left: 0;
             &-left{
                 width: 100%;
             }
@@ -277,6 +290,10 @@ $color-green: #00B887;
             color: $text-color-111;
             border-bottom: 10px solid #F6F6F6;
             margin-bottom: 10px;
+            span{
+                font-size: 17px;
+                color: $text-color-75;
+            }
         }
         .show-more{
             display: flex;
@@ -358,6 +375,15 @@ $color-green: #00B887;
                 font-size: 21px;
                 font-weight: 700;
                 color: black;
+            }
+            &-icon{
+                i{
+                    color: $border-color-085FF7;
+                    font-size: 12px;
+                    border-radius: 50%;
+                    padding: 3px;
+                    border: 2px solid $border-color-EC;
+                }
             }
         }
         .award-padding{

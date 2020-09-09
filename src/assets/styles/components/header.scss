@@ -6,17 +6,17 @@
 
     &__border {
         position: absolute;
-        height: 2px;
+        height: 2.5px;
         background-color: $border-color-EC;
         width: 100%;
-        top: 91%;
+        top: 94%;
         z-index: -10;
     }
 
     &__logo {
         display: flex;
         align-items: center;
-        padding-left: 32px;
+        padding-left: 34px;
         width: 50%;
 
         &__logo {
@@ -45,14 +45,15 @@
         align-items: center;
 
         &-item {
-            padding: 9px 13px 13px 13px;
+            padding: 10px 12px 12px 12px;
 
             a {
                 font-size: 15px;
+                line-height: 21px;
                 color: $text-color-111;
 
                 span {
-                    padding: 12px 0 14px 0;
+                    padding: 12px 0 13.5px 0;
                 }
 
                 .header-selected {
@@ -118,7 +119,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 30px 10px 15px;
+        padding: 13px 30px 3px 15px;
         position: fixed;
         z-index: 30;
         width: 100%;
